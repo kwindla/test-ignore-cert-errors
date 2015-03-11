@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>test</title>
+<script>
+try {
+  var IPC = require ('ipc');
+} catch (err) {}
+function done_loading () {
+  IPC.send ('loaded-okay');
+}
+</script>
+</head>
+<body onload="done_loading()">
+<h1>loaded okay</h1>
+</body>
+</html>
